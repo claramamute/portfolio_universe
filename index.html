@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfolio">
+    <meta name="author" content="Generation">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header> <!-- cabecalho -->
+        <div id="header_content"> <!--container -->
+            <div id="titulo"> <!--compartimento-->
+                <a href="#">Universe</a>
+            </div>
+            <div id="menu"> <!--compartimento-->
+                <nav> <!--tag semântica navegação-->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main> <!--conteudo principal-->
+        <section id="home"> <!--sessao de conteudo-->
+            <article id="home_texto"> <!--conteudo que não precisa de outro para fazer sentido -->
+                <h4>Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat rem quidem quisquam molestiae, sed
+                    rerum repudiandae vitae voluptatem esse saepe fugiat laboriosam accusantium repellendus facere
+                    eligendi dolorum blanditiis aliquam reprehenderit?</p>
+                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github Gen">Explorar</a>
+                <!--target - aba nova-->
+            </article>
+            <article>
+                <img src="./assets/img/astronauta.svg" width="450" alt="Capacete Astronauta">
+            </article>
+        </section>
+        <section id="about">
+            <!-- Foto do Perfil do Github -->
+            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
+            <!-- Texto Sobre você -->
+            <article id="sobre_texto">
+                <h1>Sobre mim</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                    Quibusdam odit voluptates incidunt inventore rem error harum
+
+                    blanditiis accusamus vitae, minus fugit consequatur?
+
+                    Dolorum maiores magni deleniti modi sit laudantium totam!
+                </p>
+                <!-- Informações do Github -->
+                <div id="sobre_github">
+
+                    <a target="_blank" href="https://github.com/conteudoGeneration">Github</a>
+
+                    <p>200 Seguidores</p>
+
+                    <p>100 Repositórios</p>
+                </div>
+            </article>
+        </section>
+        <section id="contact">
+            <arcticle id="redes_sociais" <h4>Contate-me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod error veniam in voluptatem magni quisquam</p>
+
+                <div id="icones_redes_sociais">
+                    <a href="">
+                        <img src="" alt="" width="">:
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="">
+                        <img src="assets/img/github.svg" alt="Github" />
+                    </a>
+                    <a href="">
+                        <img src="assets/img/instagram.svg" alt="Instagram" />
+                    </a>
+                </div>
+
+            </arcticle>
+            <form action="" method="post"> <!--especifica pra onde será enviado os dados-->
+                <label for="name">Nome:</label> <!--rotula o campo-->
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                <span
+                    id="textNome"></span><!--JS vai manipular e gerar informações abaixo do input, caso esteja inválido-->
+
+                <label for="email">Email:</label> <!--rotula o campo-->
+                <input type="text" id="email" name="email" placeholder="Digite seu email">
+                <span id="textEmail"></span><!--Usado para modificar/adicionar posteriormente-->
+
+                <label for="subject">Assunto:</label> <!--rotula o campo-->
+                <input type="text" id="subject" name="subject" placeholder="Digite seu assunto">
+                <span id="textSubject"></span>
+
+                <label for="message">Mensagem:</label> <!--rotula o campo-->
+                <textarea id="message" name="message" placeholder="Envie sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Feito com ❤️ por Generation Brasil - 2024</p> <!--   &#10084 -->
+    </footer>
+</body>
+
+</html> 
