@@ -8,42 +8,43 @@
     <meta name="author" content="Generation">
     <meta name="keywords" content="HTML, CSS, Javascript">
     <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header> <!-- cabecalho -->
-        <div id="header_content"> <!--container -->
+    <header class=" flex menu_container"> <!-- cabecalho -->
+        <div id="header_content" class="menu_content"> <!--container -->
             <div id="titulo"> <!--compartimento-->
                 <a href="#">Universe</a>
             </div>
             <div id="menu"> <!--compartimento-->
                 <nav> <!--tag semântica navegação-->
-                    <ul>
+                    <ul class=" flex menu_lista">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Contate-me</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main> <!--conteudo principal-->
-        <section id="home"> <!--sessao de conteudo-->
+    <main > <!--conteudo principal-->
+        <section id="home" class="home_container"> <!--sessao de conteudo-->
             <article id="home_texto"> <!--conteudo que não precisa de outro para fazer sentido -->
                 <h4>Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat rem quidem quisquam molestiae, sed
                     rerum repudiandae vitae voluptatem esse saepe fugiat laboriosam accusantium repellendus facere
                     eligendi dolorum blanditiis aliquam reprehenderit?</p>
-                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github Gen">Explorar</a>
+                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github Gen" class="botao">Explorar</a>
                 <!--target - aba nova-->
             </article>
             <article>
                 <img src="./assets/img/astronauta.svg" width="450" alt="Capacete Astronauta">
             </article>
         </section>
-        <section id="about">
+        <section id="about" class="sobre">
             <!-- Foto do Perfil do Github -->
             <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
             <!-- Texto Sobre você -->
@@ -61,7 +62,7 @@
                 <!-- Informações do Github -->
                 <div id="sobre_github">
 
-                    <a target="_blank" href="https://github.com/conteudoGeneration">Github</a>
+                    <a target="_blank" href="https://github.com/conteudoGeneration" class="botao">Github</a>
 
                     <p>200 Seguidores</p>
 
