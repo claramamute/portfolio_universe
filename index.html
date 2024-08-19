@@ -30,8 +30,8 @@
         </div>
     </header>
     <main > <!--conteudo principal-->
-        <section id="home" class="home_container"> <!--sessao de conteudo-->
-            <article id="home_texto"> <!--conteudo que não precisa de outro para fazer sentido -->
+        <section id="home" class="flex home_container"> <!--sessao de conteudo-->
+            <article id="home_texto" class="home_content"> <!--conteudo que não precisa de outro para fazer sentido -->
                 <h4>Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat rem quidem quisquam molestiae, sed
@@ -40,11 +40,11 @@
                 <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github Gen" class="botao">Explorar</a>
                 <!--target - aba nova-->
             </article>
-            <article>
+            <article id="home_imagem" class="home_content">
                 <img src="./assets/img/astronauta.svg" width="450" alt="Capacete Astronauta">
             </article>
         </section>
-        <section id="about" class="sobre">
+        <section id="about" class="sobre_container">
             <!-- Foto do Perfil do Github -->
             <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
             <!-- Texto Sobre você -->
@@ -60,7 +60,7 @@
                     Dolorum maiores magni deleniti modi sit laudantium totam!
                 </p>
                 <!-- Informações do Github -->
-                <div id="sobre_github">
+                <div id="sobre_github" class="flex sobre_github">
 
                     <a target="_blank" href="https://github.com/conteudoGeneration" class="botao">Github</a>
 

@@ -83,47 +83,78 @@ body{
 /* estilização seção home */
 
 .home_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px 200px;
-    gap: 20px;
+    max-width: 1120px;
+    margin: auto; 
+    height: 100vh;
+    display: flex; 
 }
 
-#home_texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.home_container p,
+h1,
+h4 {
     text-align: center;
-    gap: 15px;
 }
 
-#home_texto h1{
-    font-size: 26px;
-    
+.home_container h4 {
+    margin: 16px 0;
+ }
+ 
+ .home_container h1 {
+    font-size: 36px;
+}
+
+.home_container p {
+    margin: 16px 0;
+}
+
+.home_container .botao {
+    width: 40%; 
+}
+
+.home_content {
+    width: 50vw;    
+    display: flex;
+    justify-content: center;    
+    align-items: center;       
+    flex-direction: column;
+}
+
+.home_content img {
+    width: 75%; 
 }
 
 /* estilização seção sobre */
 
-.sobre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px 200px;
-    gap: 20px;
+.sobre_container {
+    max-width: 1120px;
+    margin: -24px auto; 
+    height: 100vh;
+    display: flex; 
+    align-items: center;        
 }
+
+.sobre_container img {
+    width: 35%;
+    border: 5px solid var(--purple-500);
+    border-radius: 50%;
+}
+
+.sobre_container h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.sobre_container p {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.sobre_github {
+    justify-content: space-evenly; 
+
+}
+
 
 #sobre_texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
+    margin-left: 30px;
 }
-
-#sobre_github{
-    display: flex;
-    gap: 100px;
-    margin: 20px;
-}
-
