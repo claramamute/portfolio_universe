@@ -22,8 +22,8 @@
                 <nav> <!--tag semântica navegação-->
                     <ul class=" flex menu_lista">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contate-me</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contate-me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,12 +32,12 @@
     <main > <!--conteudo principal-->
         <section id="home" class="flex home_container"> <!--sessao de conteudo-->
             <article id="home_texto" class="home_content"> <!--conteudo que não precisa de outro para fazer sentido -->
-                <h4>Bem-vindo ao Novo Universo</h4>
+                <h4>Bem-vindo ao Universo da Clara</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat rem quidem quisquam molestiae, sed
                     rerum repudiandae vitae voluptatem esse saepe fugiat laboriosam accusantium repellendus facere
                     eligendi dolorum blanditiis aliquam reprehenderit?</p>
-                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github Gen" class="botao">Explorar</a>
+                <a target="_blank" href="https://github.com/claramamute" alt="Github Gen" class="botao">Explorar</a>
                 <!--target - aba nova-->
             </article>
             <article id="home_imagem" class="home_content">
@@ -45,51 +45,32 @@
             </article>
         </section>
         <section id="about" class="sobre_container">
-            <!-- Foto do Perfil do Github -->
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
-            <!-- Texto Sobre você -->
-            <article id="sobre_texto">
-                <h1>Sobre mim</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-                    Quibusdam odit voluptates incidunt inventore rem error harum
-
-                    blanditiis accusamus vitae, minus fugit consequatur?
-
-                    Dolorum maiores magni deleniti modi sit laudantium totam!
-                </p>
-                <!-- Informações do Github -->
-                <div id="sobre_github" class="flex sobre_github">
-
-                    <a target="_blank" href="https://github.com/conteudoGeneration" class="botao">Github</a>
-
-                    <p>200 Seguidores</p>
-
-                    <p>100 Repositórios</p>
-                </div>
-            </article>
+           
         </section>
-        <section id="contact">
-            <arcticle id="redes_sociais" <h4>Contate-me</h4>
+        <section id="contact" class="contact_container">
+            <arcticle id="redes_sociais" class="flex contact_content">
+                <h4>Contate-me</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quod error veniam in voluptatem magni quisquam</p>
 
-                <div id="icones_redes_sociais">
-                    <a href="">
-                        <img src="" alt="" width="">:
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                <div id="icones_redes_sociais" class="flex icones">
+                    <a href="" class="social_icons">
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn"  />
                     </a>
-                    <a href="">
-                        <img src="assets/img/github.svg" alt="Github" />
+                    <a href="" class="social_icons">
+                        <img src="assets/img/github.svg" alt="Github"/>
                     </a>
-                    <a href="">
+                    <a href="" class="social_icons">
                         <img src="assets/img/instagram.svg" alt="Instagram" />
                     </a>
                 </div>
 
             </arcticle>
-            <form action="" method="post"> <!--especifica pra onde será enviado os dados-->
+            <form id="formulario" action="https://formsubmit.co/d3c0c93101a3a45fe192b13bbab8e725" method="POST"  class="form_content"> <!--especifica pra onde será enviado os dados-->
+
+                <input type="hidden" name="_next" value="http://localhost:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
                 <label for="name">Nome:</label> <!--rotula o campo-->
                 <input type="text" id="name" name="name" placeholder="Digite seu nome">
                 <span
@@ -106,13 +87,14 @@
                 <label for="message">Mensagem:</label> <!--rotula o campo-->
                 <textarea id="message" name="message" placeholder="Envie sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button  type="submit" class="botao">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>Feito com ❤️ por Generation Brasil - 2024</p> <!--   &#10084 -->
+        <p>Feito com ❤️ por Clara Araujo - 2024</p> <!--   &#10084 -->
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html> 

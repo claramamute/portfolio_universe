@@ -158,3 +158,68 @@ h4 {
 #sobre_texto{
     margin-left: 30px;
 }
+
+.contact_container{
+    display: grid;
+    /* grid-template-columns: auto auto;  */
+    grid-template-columns: repeat(auto-fill, 545px); /* o grid tentará criar tantas colunas de 545px quanto couberem dentro do container. Se o espaço não for suficiente para a próxima coluna de 545px, ela irá quebrar para a linha seguinte e deixar em coluna */
+    margin: auto;
+    max-width: 1120px;
+    height: 100vh;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact_content{
+   flex-direction: column;
+   text-align: center;
+   gap: 30px;
+}
+
+.contact_content h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icones{
+    gap: 15px;
+}
+.icones a img{
+   width: 70px;
+}
+
+.social_icons:hover{
+    filter:  brightness(0) saturate(100%) invert(28%) sepia(26%) saturate(4087%) hue-rotate(242deg) brightness(94%) contrast(103%);
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+
+.form_content input, textarea{
+    margin: 8px 0 16px ;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+}
+
+.form_content button{
+    background-color: transparent;
+}
+
+
+footer {
+    margin: 0;
+    padding: 24px;
+    color: var(--white);
+    background-color: var(--purple-500);
+    filter: opacity(0.9);
+    font-weight: bold;
+    text-align: center;
+}
